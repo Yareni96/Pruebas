@@ -43,7 +43,61 @@ Route::delete('Categorias/{categoria}','CategoriasControler@destroy');
 Route::get('Categorias/{categoria}/edit','CategoriasControler@edit');
 //Route::resource('Categorias','CategoriasControler');
 
+Route::get('/', function () {
+    return view('welcome');
+});
 
+Route::get('/index', function () {
+    return view('index');
+});
+
+Route::get('/vista', function () {
+    return view('vista');
+});
+
+Route::get('/crud', function () {
+    return view('crud');
+});
+
+Route::get('/nuevo', function () {
+    return view('nuevo');
+});
+
+Route::get('/modrefri', function () {
+    return view('layouts.modrefri');
+});
+
+Route::get('/eliminar', function () {
+    return view('layouts.eliminar');
+});
+
+Route::get('/refri', function () {
+    return view('layouts.refri');
+});
+Route::get('/lavadora', function () {
+    return view('layouts.lavadora');
+});
+Route::get('/modlav', function () {
+    return view('layouts.modlav');
+});
+Route::get('/sala', function () {
+    return view('layouts.sala');
+});
+Route::get('/modsala', function () {
+    return view('layouts.modsala');
+});
+Route::get('/laptop', function () {
+    return view('layouts.laptop');
+});
+Route::get('/modlap', function () {
+    return view('layouts.modlap');
+});
+Route::get('/celular', function () {
+    return view('layouts.celular');
+});
+Route::get('/modcel', function () {
+    return view('layouts.modcel');
+});
 
 
 
